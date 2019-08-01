@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { StockComponent } from './input/input.component';
+import {  InputComponent } from './input/input.component';
 
 
 @NgModule({
