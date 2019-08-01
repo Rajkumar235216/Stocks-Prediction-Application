@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {  InputComponent } from './input/input.component';
+import { SearchService } from './search.service';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import {  InputComponent } from './input/input.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
