@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../search.service';
+import { StockComponent } from '../stock/stock.component';
 
 
 @Component({
@@ -8,16 +9,9 @@ import { SearchService } from '../search.service';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
-  private press;
-  constructor(private getprint: SearchService) { }
 
-  ngOnInit() {
-    this.press = this.getprint;
-  }
+    constructor(private getprint: SearchService) { }
 
-}
-/*export const stocks: Stocks[
-{ symbol : 'INFY' , prices:[10,20,30] },
-{ symbol: 'GOOGL' , prices: [100, 200, 300] },
-{ symbol: 'APPL' , prices: [100, 205, 308] },
-]*/
+      ngOnInit() {
+           }
+   }

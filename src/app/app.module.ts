@@ -5,15 +5,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {  InputComponent } from './input/input.component';
 import { SearchService } from './search.service';
+import { FormsModule } from '@angular/forms';
+import { StockComponent } from './stock/stock.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputComponent
+    InputComponent,
+    StockComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]
