@@ -16,7 +16,7 @@ export class InputComponent implements OnInit {
     constructor(private getprint: SearchService) { }
 
        ngOnInit() {
-           }
+     }
 
 // tslint:disable-next-line: member-ordering
 }

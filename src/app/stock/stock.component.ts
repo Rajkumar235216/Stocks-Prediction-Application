@@ -15,8 +15,8 @@ export class StockComponent implements OnInit {
 
 }
 export const Stocks = [
-  { symbol: 'INFY', prices: [10, 20, 30] },
-  { symbol: 'GOOGL', prices: [100, 200, 300] },
-  { symbol: 'APPL', prices: [50, 150, 305] }
+  { symbol: 'INFY',  prices: [203.2, 180.1, 205.3, 205.4, 160.9, 200.01, 199.9] },
+  { symbol: 'GOOGL', prices: [203.2, 180.1, 205.3, 205.4, 160.9, 200.01, 199.9] },
+  { symbol: 'APPL',  prices: [203.2, 180.1, 205.3, 205.4, 160.9, 200.01, 199.9] }
 ];
 
