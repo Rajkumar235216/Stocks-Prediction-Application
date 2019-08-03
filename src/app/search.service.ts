@@ -13,12 +13,13 @@ export class SearchService {
   constructor() { }
  print(input: string) {
      z = input;
+   document.getElementById('text').innerHTML = 'You Searched for ...';
 
   }
 
   result(): number[] {
 
-    // tslint:disable-next-line: no-unused-expression
+     // tslint:disable-next-line: no-unused-expression
     switch (z) {
       // tslint:disable-next-line: no-unused-expression
       case this.stock[0].symbol:

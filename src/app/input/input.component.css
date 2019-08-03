@@ -2,3 +2,11 @@
 {
 width: 50%;
 }
+.mb-3
+{
+    margin: 50px 50px 10px 25% ;
+}
+.input-group-append
+{
+    background-color: white;
+}
