@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../search.service';
 import { StockComponent } from '../stock/stock.component';
+import { ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
@@ -8,10 +9,14 @@ import { StockComponent } from '../stock/stock.component';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
+
+
 export class InputComponent implements OnInit {
 
     constructor(private getprint: SearchService) { }
 
-      ngOnInit() {
+       ngOnInit() {
            }
-   }
+
+// tslint:disable-next-line: member-ordering
+}

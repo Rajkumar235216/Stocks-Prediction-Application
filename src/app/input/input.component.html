@@ -1,5 +1,14 @@
 <form #inputValue = "ngForm">
 <div class="input-group mb-3" >
+    <div class="dropdown">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">Category</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">APPL</a>
+        <a class="dropdown-item" href="#">GOOGL</a>
+        <a class="dropdown-item" href="#">INFY</a>
+      </div>
+    </div>
   <input ngModel  #input type="text" name = "input" class="form-control" placeholder="Search stock you want to predict" aria-label="Recipient's username"
     aria-describedby="button-addon2"  >
   <div class="input-group-append">
@@ -10,8 +19,25 @@
 {{ inputValue.value | json }}
 </form>
 
+ 
 <div>
-  {{this.getprint.print(input.value)}}
+  <app-search-result></app-search-result>
+
 </div>
+<!-- <div>
+  <ul class="list-group list-group-horizontal-md">
+    
+    <li id="company" class="list-group-item"></li>
+    <li class="list-group-item flex-fill" *ngFor="let number of (this.getprint.print(input.value))">{{number}}</li>
+  </ul>
+</div> 
+-->
+
+
+
+ 
+ 
+  
+
 
 

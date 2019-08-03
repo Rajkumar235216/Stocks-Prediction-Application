@@ -7,17 +7,21 @@ import {  InputComponent } from './input/input.component';
 import { SearchService } from './search.service';
 import { FormsModule } from '@angular/forms';
 import { StockComponent } from './stock/stock.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    StockComponent
+    StockComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]
