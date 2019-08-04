@@ -1,8 +1,10 @@
 <div class="results">
-  <h3 id="text"></h3>
+   <!--  displaying search results list -->
   <ul class="list-group list-group-horizontal-md">
-
+    <!-- displaying searched company name -->
     <li id="company" class="list-group-item"></li>
+
+    <!--  displaying stock prices for searched company -->
     <li class="list-group-item flex-fill" *ngFor="let number of (this.getprint.result())">{{number}}</li>
   </ul>
 </div>

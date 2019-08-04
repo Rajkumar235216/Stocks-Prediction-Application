@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+//  ------ imported required classes from respective components and service --------
 import { AppComponent } from './app.component';
 import {  InputComponent } from './input/input.component';
 import { SearchService } from './search.service';
@@ -20,10 +20,10 @@ import { SearchResultComponent } from './search-result/search-result.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,  // imported forms and routing module here
     AppRoutingModule
   ],
-  providers: [SearchService],
+  providers: [SearchService], // registered service here
   bootstrap: [AppComponent]
 })
 export class AppModule { }

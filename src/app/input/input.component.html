@@ -1,16 +1,25 @@
+
 <form #inputValue = "ngForm">
 <div class="input-group mb-3" >
+  <!--  search input field -->
+
   <input ngModel  #input type="text" name = "input" class="form-control" placeholder="Search stock you want to predict" aria-label="Recipient's username"
     aria-describedby="button-addon2"  >
-  <div class="input-group-append">
-    <button (click)= "this.getprint.print(input.value)" id="coolbutton" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+
+  <!--  search button and its click functioning  -->
+  
+
+  <div class="input-group-append" >
+    <button (click)= "this.getprint.print( input.value)" id="coolbutton" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
   </div>
 </div>
 
 <!--   {{ inputValue.value | json }}   -->
 </form>
 
+<!-- search results are called in here  -->
 <div>
+  <p id="suggestion"><strong>Suggestions:</strong> APPL, INFY, GOOGL</p>
   <app-search-result></app-search-result>
 </div>
 

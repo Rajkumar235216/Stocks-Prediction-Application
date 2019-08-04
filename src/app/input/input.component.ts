@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
+// --------- imported Searcservice class from search.service.ts ---------
 import { SearchService } from '../search.service';
-import { StockComponent } from '../stock/stock.component';
-import { ViewChild, ElementRef } from '@angular/core';
+// import { StockComponent } from '../stock/stock.component';
+
 
 
 @Component({
@@ -12,10 +14,10 @@ import { ViewChild, ElementRef } from '@angular/core';
 
 
 export class InputComponent implements OnInit {
+   //  --------  created instance of SearchService class -------------
 
     constructor(private getprint: SearchService) { }
-
-       ngOnInit() {
+    ngOnInit() {
      }
 
 // tslint:disable-next-line: member-ordering

@@ -1,18 +1,21 @@
 import { NgModule, Input } from '@angular/core';
+
+//   ------ imported required modules but not used anywhere itn this project ------------
 import { RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { InputComponent } from '../input/input.component';
 import { SearchResultComponent } from '../search-result/search-result.component';
 import { AppComponent } from '../app.component';
 
-const routes: Routes = [
+/* const routes: Routes = [
 
     {  path: 'result', component: SearchResultComponent },
   ];
+  */
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    // RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],
   declarations: []
